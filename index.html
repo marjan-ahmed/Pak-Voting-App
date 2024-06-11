@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Voting App</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1 class="first-heading">Vote Freely, Securely, and Fast</h1>
+        </section>
+
+        <div id="container">
+            <form method="post">
+                <div class="input-container">
+                    <label class="name-label" for="name">Name <span style="color: rgb(168, 21, 21)">*</span></label>
+                    <input type="text" id="name" name="name" required placeholder="Ex. John Doe">
+                </div>
+
+                <div class="input-container">
+                    <label for="email">Email <span style="color: rgb(168, 21, 21)">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="Ex. johndoe@gmail.com">
+                </div>
+
+                <div class="input-container">
+                    <label for="cnic">C-NIC <span style="color: rgb(168, 21, 21)">*</span></label>
+                    <input type="number" id="cnic" name="cnic" required placeholder="Ex. 4220167890123" minlength="13" maxlength="13">
+                    <small class="description">Please provide 13 digits number without dash (-), we will accept.</small>
+                </div>
+
+                <div class="input-container">
+                    <label class="parties" for="party">Elected Parties:</label>
+                    <select name="party" id="party">
+                        <optgroup label="Please select">
+                            <option value="pti">PTI (Pakistan Tahreek E Insaaf)</option>
+                            <option value="ppp">PPP (Pakistan Peoples Party)</option>
+                            <option value="pmln">PMLN (Pakistan Muslim League Nawaz)</option>
+                            <option value="mqm">MQM (Muttahida Qaumi Movement)</option>
+                            <option value="jui">JUI (Jamiat Ulema-e-Islam)</option>
+                            <option value="tarazu">Tarazu (Hafiz Naeem Ur Rehman)</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <button class="submit" type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+
+
+</body>
+</html>
